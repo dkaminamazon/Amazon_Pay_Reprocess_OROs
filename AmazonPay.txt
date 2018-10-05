@@ -1,0 +1,23 @@
+## Properties file containing MWS Access Keys and Sandbox configurations.
+
+# MWS Access Keys
+MerchantId=
+AccessKey=
+SecretKey=
+ClientId=
+
+# Capture Now flag used via Authorization API call to capture immediately upon a successful authorization
+CaptureNow=true
+
+# Configuration for Sandbox vs. Production mode
+SandboxMode=false
+
+## Optional fields below
+# Test ORO to use when testing
+TestORO=S01-3122424-6193800 
+
+# Sandbox Simulation - used to reproduce a scenario (e.g. Soft Decline). See https://pay.amazon.com/us/developer/documentation/lpwa/201956480 for more details
+UseSBSimulation=false
+
+# Sandbox simulation string. See https://pay.amazon.com/us/developer/documentation/lpwa/201956480 for other examples
+SandboxSimulationString={"SandboxSimulation": {"State":"Declined", "ReasonCode":"InvalidPaymentMethod", "PaymentMethodUpdateTimeInMins":5, "SoftDecline":"true"}}
